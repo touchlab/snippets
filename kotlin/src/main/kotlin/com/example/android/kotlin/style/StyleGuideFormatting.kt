@@ -482,7 +482,7 @@ private object StyleGuideFormattingSpecificConstructs {
     @Retention(SOURCE)
     @Target(FUNCTION, PROPERTY_SETTER, FIELD)
     annotation class Global
-// [END android_style_guide_formatting_special_constructs_annotations_construct]
+    // [END android_style_guide_formatting_special_constructs_annotations_construct]
 
     private class SpecificConstructsAnnotations {
         // [START android_style_guide_formatting_special_constructs_annotations_var]
