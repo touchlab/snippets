@@ -25,8 +25,8 @@ allprojects {
             targetExclude(
                 "**/build/**/*.kt",
                 "spotless/**/*.kt",
-                "src/main/kotlin/com/example/android/kotlin/style/*.kt",
-                "src/test/kotlin/com/example/android/styling/*.kt",
+                "src/main/kotlin/com/example/android/kotlin/style/StyleGuideFormatting.kt",
+                "src/test/kotlin/com/example/android/kotlin/style/StyleGuideFormattingTest.kt",
             )
 
 
