@@ -1,5 +1,6 @@
 package com.example.android.styling
 
+import com.example.android.kotlin.style.Disposable
 import org.junit.Test
 
 class StyleGuideFormattingTest {

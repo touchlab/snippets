@@ -22,7 +22,13 @@ allprojects {
     extensions.configure<com.diffplug.gradle.spotless.SpotlessExtension> {
         kotlin {
             target("**/*.kt")
-            targetExclude("**/build/**/*.kt", "spotless/**/*.kt")
+            targetExclude(
+                "**/build/**/*.kt",
+                "spotless/**/*.kt",
+                "src/main/kotlin/com/example/android/kotlin/style/*.kt",
+                "src/test/kotlin/com/example/android/styling/*.kt",
+            )
+
 
             val disabledRules = arrayOf(
                 // These rules were introduced in ktlint 0.46.0 and should not be

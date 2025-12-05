@@ -1,4 +1,4 @@
-package com.example.android.styling
+package com.example.android.kotlin.style
 
 import androidx.compose.runtime.Composable
 import java.util.logging.Logger

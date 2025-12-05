@@ -1,4 +1,4 @@
-package com.example.android.styling
+package com.example.android.kotlin.style
 
 
 fun styleGuideFormattingWhitespaceWrong(list: List<String>, ints: List<Int>, it: Int) {
@@ -58,11 +58,13 @@ fun styleGuideFormattingWhitespaceWrong(list: List<String>, ints: List<Int>, it:
         }
     }
 
-    // [START android_style_guide_formatting_whitespace_colon_generic_wrong]
-    // WRONG
-    fun <T: Comparable> max(a: T, b: T)
-    // [END android_style_guide_formatting_whitespace_colon_generic_wrong]
-    {}
+    object {
+        // [START android_style_guide_formatting_whitespace_colon_generic_wrong]
+        // WRONG
+        fun <T : Comparable<T>> max(a: T, b: T)
+        // [END android_style_guide_formatting_whitespace_colon_generic_wrong]
+        {}
+    }
 
     // [START android_style_guide_formatting_whitespace_colon_generic_where_wrong]
     // WRONG
@@ -133,11 +135,13 @@ fun styleGuideFormattingWhitespaceOkay(list: List<String>, ints: List<Int>, it: 
         }
     }
 
-    // [START android_style_guide_formatting_whitespace_colon_generic_okay]
-    // Okay
-    fun <T : Comparable> max(a: T, b: T)
-    // [END android_style_guide_formatting_whitespace_colon_generic_okay]
-    {}
+    object {
+        // [START android_style_guide_formatting_whitespace_colon_generic_okay]
+        // Okay
+        fun <T : Comparable<T>> max(a: T, b: T)
+        // [END android_style_guide_formatting_whitespace_colon_generic_okay]
+        {}
+    }
 
     // [START android_style_guide_formatting_whitespace_colon_generic_where_okay]
     // Okay

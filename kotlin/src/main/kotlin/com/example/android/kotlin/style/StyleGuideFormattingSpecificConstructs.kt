@@ -1,4 +1,4 @@
-package com.example.android.styling
+package com.example.android.kotlin.style
 
 import android.graphics.drawable.Icon
 import kotlin.annotation.AnnotationRetention.*
@@ -43,10 +43,9 @@ private class SpecificConstructsAnnotations {
 
 private class SpecificConstructsAnnotationSingle {
     // [START android_style_guide_formatting_special_constructs_annotations_single]
-    @field:[JvmStatic Volatile]
+    @field:[JvmField Volatile]
     var disposable: Disposable? = null
     // [END android_style_guide_formatting_special_constructs_annotations_single]
-
 }
 
 private object ImplicitReturnPropertyBefore {
@@ -72,7 +71,7 @@ private object ImplicitReturnPropertyAfter {
     // [END android_style_guide_formatting_special_constructs_implicit_icon_after]
 }
 
-class IconLoader {
+object IconLoader {
     fun getIcon(location: String): Icon = TODO()
 }
 class Disposable
